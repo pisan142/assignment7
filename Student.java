@@ -29,9 +29,11 @@ public class Student {
     return false;
   }
 
-  // add the course to the list of registeredCourses
-  // Display message if University does not offer this course
-  // Display message if student already registered for this course
+  /**
+   * Add the course to the list of registeredCourses Display message if University
+   * does not offer this course Display message if student already registered for
+   * this course
+   */
   public void add(String courseName) {
 
     // TODO
