@@ -50,32 +50,32 @@ public class Registrar {
     int choice = getChoice("Enter command: ");
     System.out.println("Choice is " + choice);
     switch (choice) {
-	    case 1:
-	      uni.information();
-	      break;
-	    case 2:
-	      uni.listCourses();
-	      break;
-	    case 3:
-	      addCourse(uni);
-	      break;
-	    case 4:
-	      enrollAStudent(uni);
-	      break;
-	    case 5:
-	      uni.listStudents();
-	      break;
-	    case 6:
-	      registerStudentForCourse(uni);
-	      break;
-	    case 7:
-	      listStudentsInCourse(uni);
-	      break;
-	    case 10:
-	      System.out.println("Thank you for using the Registrar program");
-	      System.exit(0);
-	    default:
-	      System.out.println("Invalid choice " + choice);
+      case 1:
+        uni.information();
+        break;
+      case 2:
+        uni.listCourses();
+        break;
+      case 3:
+        addCourse(uni);
+        break;
+      case 4:
+        enrollAStudent(uni);
+        break;
+      case 5:
+        uni.listStudents();
+        break;
+      case 6:
+        registerStudentForCourse(uni);
+        break;
+      case 7:
+        listStudentsInCourse(uni);
+        break;
+      case 10:
+        System.out.println("Thank you for using the Registrar program");
+        System.exit(0);
+      default:
+        System.out.println("Invalid choice " + choice);
     }
     System.out.println();
     universityMenu(uni);
