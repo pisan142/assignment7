@@ -26,8 +26,8 @@ public class Registrar {
   }
 
   /**
-   * Main menu for program, asks university name
-   * creates university object and calls universityMenu
+   * Main menu for program, asks university name.
+   * Creates university object and calls universityMenu
    */
   public static void mainMenu() {
     System.out.println("Welcome to the Registrar program");
@@ -74,6 +74,7 @@ public class Registrar {
       case 10:
         System.out.println("Thank you for using the Registrar program");
         System.exit(0);
+        break;
       default:
         System.out.println("Invalid choice " + choice);
     }
