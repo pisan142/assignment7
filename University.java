@@ -65,7 +65,8 @@ public class University {
 
   // display information about university
   public void information() {
-    System.out.println(name + " has " + numberOfCourses + " courses and " + numberOfStudents + " students");
+    System.out.println(name + " has " + numberOfCourses + " courses and " + 
+    												numberOfStudents + " students");
   }
 
   // short string when university object is printed

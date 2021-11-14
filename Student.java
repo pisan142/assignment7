@@ -8,7 +8,7 @@ public class Student {
   private static int MAX_REGISTERED_COURSES = 4; // max number of courses a student can enroll
 
   private String name; // name of student
-  private String registeredCourses[]; // list of currently registered courses
+  private String[] registeredCourses; // list of currently registered courses
   private int numberOfRegisteredCourses; // number of courses currently registered
   private University university; // university student belongs to
 
@@ -30,9 +30,9 @@ public class Student {
   }
 
   /**
-   * Add the course to the list of registeredCourses Display message if University
-   * does not offer this course Display message if student already registered for
-   * this course
+   * Add the course to the list of registeredCourses. Display message if University
+   * does not offer this course. Display message if student already registered for
+   * this course.
    */
   public void add(String courseName) {
 

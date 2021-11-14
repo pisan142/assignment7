@@ -1,3 +1,4 @@
+import java.util.Scanner;
 
 /**
  * Write a description of class Registrar here.
@@ -5,8 +6,6 @@
  * @author (your name)
  * @version (a version number or a date)
  */
-
-import java.util.*;
 
 public class Registrar {
   // static variable, so we can use the same keyboard for all input
@@ -26,8 +25,10 @@ public class Registrar {
     return str;
   }
 
-  // Main menu for program, asks university name
-  // creates university object and calls universityMenu
+  /**
+   * Main menu for program, asks university name
+   * creates university object and calls universityMenu
+   */
   public static void mainMenu() {
     System.out.println("Welcome to the Registrar program");
     String uniName = getString("Enter a name for University: ");
@@ -49,33 +50,32 @@ public class Registrar {
     int choice = getChoice("Enter command: ");
     System.out.println("Choice is " + choice);
     switch (choice) {
-    case 1:
-      uni.information();
-      break;
-    case 2:
-      uni.listCourses();
-      break;
-    case 3:
-      addCourse(uni);
-      break;
-    case 4:
-      enrollAStudent(uni);
-      break;
-    case 5:
-      uni.listStudents();
-      break;
-    case 6:
-      registerStudentForCourse(uni);
-      break;
-    case 7:
-      listStudentsInCourse(uni);
-      break;
-    case 10:
-      System.out.println("Thank you for using the Registrar program");
-      System.exit(0);
-
-    default:
-      System.out.println("Invalid choice " + choice);
+	    case 1:
+	      uni.information();
+	      break;
+	    case 2:
+	      uni.listCourses();
+	      break;
+	    case 3:
+	      addCourse(uni);
+	      break;
+	    case 4:
+	      enrollAStudent(uni);
+	      break;
+	    case 5:
+	      uni.listStudents();
+	      break;
+	    case 6:
+	      registerStudentForCourse(uni);
+	      break;
+	    case 7:
+	      listStudentsInCourse(uni);
+	      break;
+	    case 10:
+	      System.out.println("Thank you for using the Registrar program");
+	      System.exit(0);
+	    default:
+	      System.out.println("Invalid choice " + choice);
     }
     System.out.println();
     universityMenu(uni);
